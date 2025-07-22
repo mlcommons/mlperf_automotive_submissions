@@ -8,7 +8,7 @@ if [ ! -e docs ]; then
     test $? -eq 0 || exit $?
 fi
 
-# cp docs/docinit.sh .
+cp docs/docinit.sh .
 export default_division="closed";
 export default_category="adas";
 
