@@ -4,7 +4,7 @@ export AUTOMOTIVE_RESULTS_REPO_BRANCH=${AUTOMOTIVE_RESULTS_REPO_BRANCH:-main}
 export AUTOMOTIVE_RESULTS_VERSION=${AUTOMOTIVE_RESULTS_VERSION:-v0.5}
 
 if [ ! -e docs ]; then
-    git clone https://github.com/mlcommons/inference_results_visualization_template.git --branch=changes_to_include_automotive  docs
+    git clone https://github.com/mlcommons/automotive_results_visualization_template/  docs
     test $? -eq 0 || exit $?
 fi
 
