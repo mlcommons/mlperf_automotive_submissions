@@ -43,4 +43,4 @@ jobs:
         head -n 100 temp1 > README.md
         git add README.md
         
-        git diff-index --quiet HEAD || (git commit -am "Updated results summary" ) && git push)
+        git diff --quiet HEAD -- summary.csv summary.json summary_results.json || (git commit -am "Updated results summary" && git push)
